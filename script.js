@@ -77,17 +77,17 @@ cart_button.addEventListener('click', function() {
 // Код, который меняет тему
 function change_theme() {
    let header = document.querySelector('header')
-   if (current_background == 'url(/uploads/2022/11/bg_space.png)') {
-       current_background = 'url(/uploads/2022/11/bg_mars.png)'
+   if (current_background == 'url(mars1.jpg)') {
+       current_background = 'url(mars2.jpg)'
    } else {
-       current_background = 'url(/uploads/2022/11/bg_space.png)'
+       current_background = 'url(mars1.jpg)'
    }
    header.style.background = current_background
    header.style.backgroundSize = 'cover'
 }
  
 let change_theme_button = document.querySelector('.switch-theme-button')
-let current_background = 'url(/uploads/2022/11/bg_mars.png)'
+let current_background = 'url(mars1.jpg)'
 change_theme_button.addEventListener('click', change_theme)
  
 
